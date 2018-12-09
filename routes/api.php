@@ -18,6 +18,8 @@ Route::group(["prefix"=>"news"], function() {
     Route::apiResource("/{news}/reviews", "ReviewController");
 });
 
+Route::get('/authuser', 'UserController@getAuthUser');
+
 //Route::group(["prefix"=>"user"], function() {
 //    Route::apiResource("/{user}/reviews", "ReviewController");
 //});
